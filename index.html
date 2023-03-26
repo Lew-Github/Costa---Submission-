@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- This is used to state that the file is HTML code.-->
+<html>
+
+<head> <!-- The head is where all the pages information is stored -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale= 1">  <!-- Width=device-width has been added to set the website to match the device being used screen, initial scale means the website should scale the the device  -->
+  <title>Lewis Wilde - Costa </title> <!-- Used to create the name of the website  -->
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- This information is used to reference which style sheet so the different CSS rules could be applied  -->
+</head>
+
+<body> <!-- Everything within the body is whats being displayed within the website, all content needs to be within the body -->
+<div id = "bg1"> <!-- This div element has been created to contain all elements infront of the first background , the video  -->
+  <video id = "bgvideo" src="Video.mp4" muted autoplay loop></video> <!-- This video has been inserted to use as my first background, src is used to import the downloaded video into the website, muted autoplay and loop are all instructions for the video so it stays constantly playing when loaded   -->
+    <header id = "top"> <!-- This header has been created in html but all the elements within the header have been created in JS, this is the top of my webpage  -->
+    </header> <!-- This is used to close the header  -->
+      <h1 id = "match"> A PERFECT MATCH </h1> <!-- This h1 is used to develop my first set of words on my website 'A perfect match', i have then given it an ID so it can be styled within JS or CSS -->
+      <h1 id = "range"> Try our delicious new limited-edition<br>&emsp;&emsp;&emsp;inspired by Rolo® range</h1> <!-- Similar concept as the previous line of code but <br> is used to add a line break and &emsp is used to add a space, moving the words. -->
+       <button id = "menu"> See the menu </button> <!-- Used to insert the a button element -->
+</div> <!-- This is used to close my first background div, all the content within this div are placed infront of the background video  -->
+<section id= "bg2"> <!-- This section element has been created in JS, i have given it the ID "bg2" and used this ID in JS to insert new elements, this is also the start of the my second background -->
+</section>
+<section> <!-- This section is also used for my second background, it uses the same html elements as the first background infront of the video but this time over the cream wave background -->
+  <h1 id = "recall"> PRODUCT RECALL - <br> GLASS HEART CUP </h1>  
+  <p id = "recall2"> As a precautionary measure, we've<br> issued a product recall for the Glass<br> Heart Cup.</p>
+  <button id = "more"> Learn more </button>
+</section> <!-- End of my second background  -->
+<section id ="bg3"> <!-- This section is for my 3rd section of my website with the three boxes, i have created this section so that the three boxes are contained within this section, i then created a div for each of the boxes and created all the other elements within JS  -->
+    <div id = "box1"></div>
+    <div id = "box2"></div>
+    <div id = "box3"></div>
+</section> <!-- End of the three box section  -->
+<div id = "box4"> <!-- This div is used to create the next section of my website, underneath the three boxes.  I then used to JS to style this section -->
+  <p id = "about">About us  </p>
+  <ul id = "one"> <!-- This is the first of 5 list elemends created in the section in this div , i gave it the ID "one" so it could be called in JS or CSS to style and position it where i want it to be -->
+    <li> Our coffees </li>
+    <li> Our story </li>
+    <li> Sustainability </li>
+    <li> Costa foundation </li>
+    <li> Policies and reports </li>
+    <li> Download our app </li>
+  </ul> <!-- end of the first list   -->
+  <p id = "diet"> Dietary information</p>
+  <ul id = "two"> <!-- USes the same element and concept as the previous list  -->
+    <li> Nutrition & allergens </li>
+    <li> Store dietary information</li>
+    <li> Lotus Biscoff Cheezecake <br> dietary information </li>
+    <li> Costa Express dietary <br> information </li>
+    <li> Ready to drink dietary <br> information</li>
+    <li> Costa at home dietary <br> information </li>
+    <li> Branded products dietary <br> information </li>
+  </ul>
+  <p id = "gift">Gifting & merchandise</p>
+  <ul id = "three"> <!-- USes the same element and concept as the previous list  -->
+    <li> Gift cards </li>
+    <li> Gift cards for business</li>
+    <li> Merchandise </li>
+  </ul>
+  <p id = "for"> For business </p>
+  <ul id = "four"> <!-- USes the same element and concept as the previous list  -->
+    <li>Costa Business Partners </li>
+    <li>Modern Slavery <br> Statement</li> <!--  <br> is used add a line break within this list style -->
+  </ul>
+  <p id = "contact">Contact us</p>
+  <ul id = "five"> <!-- USes the same element and concept as the previous list  -->
+    <li>FAQs</li>
+    <li>Contact us</li> 
+    <li>Press</li>
+    <li>Careers</li>
+  </ul>
+  
+</div> <!-- This is used to close div that contains all the lists, i have placed it within a div element so i could change the color of them all   -->
+
+<footer id = "footer"> <!-- This is where i have created the footer element at the bottom of the page, i then gave it an ID so i could use the ID to call it within JS and CSS, i have then used JS to create all the elements within the footer  -->
+</footer>
+
+ 
+  <script src="script.js"></script> <!-- This is used to reference what JS file the website will use for the javascript aspect  -->
+
+</body>
+
+</html>

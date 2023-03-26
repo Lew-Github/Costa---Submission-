@@ -1,0 +1,238 @@
+html,body { 
+/*   This section is used to style all aspects of the html file */
+  width: auto; /* This will set the width of whatever device it is used will adujust automatically */
+  height: auto;
+  left:0; 
+  top:0;
+  right:0;
+  border:0; /* Using this for all html removes any borders for all elements placed in the code*/
+  background-image: url(wavybackground.png); /* This sets the background for the whole webpage to my black wavy effect used in the later part of the website */
+}
+
+
+
+@font-face{
+  font-family:CostaBold; /* @font-face is used to import downloaded fonts, font family then gives it a name so it can be called within the code */
+  src: url(CostaBold.otf); /* src: url tells us what downloaded font we are changing the name too, so i can be used in the code */
+}
+
+@font-face{
+  font-family:CostaBold2;
+  src:url(CostaBold2.otf)
+}
+
+@font-face{
+  font-family:CostaBold3;
+  src:url(CostaXBold.otf)
+}
+@font-face{
+  font-family:CostaLight;
+  src:url(CostaLight.otf)
+}
+#top { /* Top the name of my div, so this is used to call it in CSS to style it as needed*/
+  display: flex; /* Setting display to flex, allows to div placement to have no specific rules, setting it to flex bring it infront of my video background  */
+}
+
+#coffees {
+font-family: CostaBold3; /* This section is used to change the font of the text in this div, CostaBold3 is one of the fonts i imported using font-face */
+}
+
+#bgvideo {
+  position: absolute; /* This section is for my background video, setting the position to absolute means whereever it is placed it will stay there no matter what */
+  left:0%;
+  /* Setting left and top to 0, makes the video at the very top and left of the screen with no gap */
+  top:0%;
+  width:100%; /* This will set the video to cover the fullscreen */
+}
+
+#match{ /* This is my CSS section for my first header 'a perfect match' setting the position to absolute means that it will stay where it is placed */
+  position:absolute;
+  top:15%; /* Top and Left are used to position the element, the higher the % means the further way from top or left side the page it is placed */
+  left:15%;
+  display:flex; /* Setting display to flex brings it infront of the background video */
+  color: white; /* Changes the colour of the font to white */
+  font-size: 300%; /* Increases the font-size */
+  font-family: CostaBold3; /* Changes the font */
+  
+}
+
+#range{ /* This section is for my first paragraph, it uses the same style aspects previously mentioned */
+  position:absolute;
+  top:27%;
+  left:12.5%;
+  display:flex;
+  color: white;
+  font-size: 200%;
+  font-family: CostaBold3;
+  
+}
+
+#menu { /* This section is for my first button */
+  position:absolute; 
+  top:45%; /* top and left are used for placement  */
+  left:25%;
+  display:flex;
+  font-size: 120%;
+  padding:12px; /*creates space within the element  */
+  padding-left:35px; /* Creates some space from the left within the element meaning the font will be more centered */
+  border-radius:110px; /* Changes the shape of the button  */
+  width:14%; /* Width: Changes the length of the button*/
+  border:white; /* These are used to change the color of the button, white is the border and maroom is the text colour*/
+  color:maroon; 
+  font-family: CostaBold3; /* Used to change the font */
+  background-image: url(arrow.png); 
+  background-repeat: no-repeat; /* These background styles are used to create the arrow within the botton, i have added the arrow image as a background and no-repeat makes sure that the background does not show more than once to fill in the space, i then used size and position to style it */
+  background-size:3%;
+  background-position: 90% 50%;
+}
+
+#menu:hover{ /* this creates a hover over effect for this button created in HTML. Not JS. When the mouse hovers over the botton the colours will change */
+  background-color:maroon;
+  color:white
+}
+
+
+
+#recall { /* This section is for my second header, it uses the same style aspects previously mentioned */
+  display:flex;
+  position: absolute;
+  font-size:330%;
+  right:10%;
+  top:70%;
+  color:maroon;
+  font-family: CostaBold3;
+}
+#recall2 { /* This section is for my second paragraph, it uses the same style aspects previously mentioned whilst adding text-align */
+  display:flex;
+  position:absolute;
+  font-size:190%;
+  right:10%;
+  top:90%;
+  color:maroon;
+  text-align: center; /* Text - align is used to style my text in this paragraph, it positions all the words to the center of where it is placed rather than just following on to the next line */
+  font-family: CostaBold3;
+}
+
+#more { /* This section is for my second button, it uses the same style aspects previously mentioned */
+  position:absolute;
+  top:110%;
+  right:22.5%;
+  display:flex;
+  font-size: 120%;
+  padding:12px;
+  padding-left:40px;
+  border-radius:110px;
+  width:14%;
+  border:white;
+  color:maroon;
+  font-family: CostaBold3;
+  background-image: url(arrow.png);
+  background-repeat: no-repeat;
+  background-size:3%;
+  background-position: 90% 50%;
+}
+
+#more:hover{ /* this creates a hover over effect for this button created in HTML. Not JS. When the mouse hovers over the botton the colours will change */
+  background-color:maroon;
+  color:white
+}
+
+
+#about { /* This section is for the start of my lists underneath the three boxes, it is the heading for one of my lists, it uses the same style aspects previously mentioned whilst adding font-weight */
+  color:white;
+  position:absolute;
+  left:6%;
+  font-size: 120%;
+  font-weight: bold; /* This makes the text bold */
+  top:10%;
+}
+#one { /* This section is for my first list, it uses the same style aspects previously mentioned whilst adding text-decoration,line-height and list-style-type.*/
+  text-decoration: none; /* This removes the lines underneath the hyperlink, underlines are automatically placed when creating a link so need removing manually */
+  line-height: 200%;
+  font-size: 120%;
+  list-style-type: none; /* This removes the standard bullet points from the list items*/
+  position:absolute;
+  left:3.5%;
+  top:22%;
+  color:white;
+} 
+
+#diet { /* This section is for the 2nd heading of my lists underneath the three boxes, it is the heading for one of my lists, it uses the same style aspects previously mentioned */
+  color:white;
+  position:absolute;
+  left:22%;
+  font-size: 120%;
+  font-weight: bold;
+  top:10%;
+}
+
+#two {/* This section is for my second list, it uses the same style aspects previously mentioned whilst adding text-decoration,line-height and list-style-type.*/
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 120%;
+  list-style-type: none;
+  position:absolute;
+  left:19.5%;
+  top:22%;
+  color:white;
+} 
+
+#gift { /* This section is for the 3rd heading of my lists underneath the three boxes, it is the heading for one of my lists, it uses the same style aspects previously mentioned */
+  color:white;
+  position:absolute;
+  left:38%;
+  font-size: 120%;
+  font-weight: bold;
+  top:10%;
+}
+
+#three { /* This section is for my third list, it uses the same style aspects previously mentioned whilst adding text-decoration,line-height and list-style-type.*/
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 120%;
+  list-style-type: none;
+  position:absolute;
+  left:35.5%;
+  top:22%;
+  color:white;
+} 
+
+#for {  /* This section is for the 4th heading of my lists underneath the three boxes, it is the heading for one of my lists, it uses the same style aspects previously mentioned */
+  color:white;
+  position:absolute;
+  left:55%;
+  font-size: 120%;
+  font-weight: bold;
+  top:10%;
+}
+
+#four { /* This section is for my 4th list, it uses the same style aspects previously mentioned whilst adding text-decoration,line-height and list-style-type.*/
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 120%;
+  list-style-type: none;
+  position:absolute;
+  left:52.5%;
+  top:22%;
+  color:white;
+}
+
+#contact {  /* This section is for the 5th heading of my lists underneath the three boxes, it is the heading for one of my lists, it uses the same style aspects previously mentioned */
+  color:white;
+  position:absolute;
+  left:69%;
+  font-size: 120%;
+  font-weight: bold;
+  top:10%;
+}
+
+#five {  /* This section is for my 5th list, it uses the same style aspects previously mentioned whilst adding text-decoration,line-height and list-style-type.*/
+  text-decoration: none;
+  line-height: 200%;
+  font-size: 120%;
+  list-style-type: none;
+  position:absolute;
+  left:66.5%;
+  top:22%;
+  color:white;
+}
